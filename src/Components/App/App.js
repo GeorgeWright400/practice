@@ -4,6 +4,7 @@ import NewPage1 from "../NewPage/NewPage1";
 import NewPage2 from "../NewPage/NewPage2";
 import Ravenous from "../Ravenous/Ravenous";
 import Appp from "../Redux/App";
+import App1 from "../Redux1/App1";
 
 import {Route, BrowserRouter as Router, Switch, Link } from "react-router-dom";
 
@@ -32,6 +33,9 @@ class App extends React.Component {
             <li>
               <Link to="/page5">Redux Practice</Link>
             </li>
+            <li>
+              <Link to="/page6">Redux Practice 1</Link>
+            </li>
           </ul>
         </nav>
           <div>
@@ -41,6 +45,7 @@ class App extends React.Component {
               <Route path="/page3" exact component={Practice}></Route>
               <Route path="/page4" exact component={Ravenous}></Route>
               <Route path="/page5" exact component={Appp}></Route>
+              <Route path="/page6" exact component={App1}></Route>
             </Switch>
           </div>
         </Router>
