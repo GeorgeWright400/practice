@@ -6,6 +6,7 @@ import Ravenous from "../Ravenous/Ravenous";
 import Appp from "../Redux/App";
 import App1 from "../Redux1/App1";
 import FormikPractice from "../FormikPractice/FormikPractice"
+import ReduxFormik from "../Redux/ReduxPlay/ReduxFormik"
 
 import {Route, BrowserRouter as Router, Switch, Link } from "react-router-dom";
 
@@ -40,6 +41,9 @@ class App extends React.Component {
             <li>
               <Link to="/page7">FormikPractice</Link>
             </li>
+            <li>
+              <Link to="/page8">Formik-Redux</Link>
+            </li>
           </ul>
         </nav>
           <div>
@@ -51,6 +55,7 @@ class App extends React.Component {
               <Route path="/page5" exact component={Appp}></Route>
               <Route path="/page6" exact component={App1}></Route>
               <Route path="/page7" exact component={FormikPractice}></Route>
+              <Route path="/page8" exact component={ReduxFormik}></Route>
             </Switch>
           </div>
         </Router>

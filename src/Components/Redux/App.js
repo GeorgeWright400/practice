@@ -24,12 +24,12 @@ function Appp() {
           <button onClick={() => dispatch(increment(5))}>+</button>
           <button onClick={() => dispatch(decrement())}>-</button>
           <button onClick={() => dispatch(signin())}>LogIn</button>
-          <button onClick={() => dispatch(additem())}>Add To Do List</button>
+        
 
           {isLogged ? <p>hey</p>: ''}
-
+          <div style={{textAlign:"center"}} >{MakeList(toDo)}</div>
           <ReduxPlay/>
-          <div>{MakeList(toDo)}</div>
+          
 
 
 
