@@ -17,7 +17,7 @@ function Appp() {
           <button onClick={() => dispatch(additem())}>Add To Do List</button>
 
           {isLogged ? <p>hey</p>: ''}
-          {toDo ? <h1>Turned On</h1>: ''}
+          {toDo ? <h1>To Do Activated</h1> : ''}
 
 
 
