@@ -1,7 +1,7 @@
-const ToDoReducer = (state = false, action) => {
+const ToDoReducer = (state = [], action) => {
     switch(action.type){
         case 'ADD_ITEM':
-            return !state;
+            return [...state, action.payload];
         default:
             return state;
     }

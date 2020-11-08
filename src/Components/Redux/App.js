@@ -1,6 +1,16 @@
 import React from "react";
 import {useSelector, useDispatch} from 'react-redux';
 import {increment, decrement, signin, additem } from './Actions/index';
+import ReduxPlay from "./ReduxPlay/ReduxPlay";
+
+const MakeList = (list) => {
+  return (<ul>
+    {list.map((item) =>{
+      return <li>{item}</li>
+    }
+    )}
+  </ul>)
+}
 
 
 
@@ -17,8 +27,9 @@ function Appp() {
           <button onClick={() => dispatch(additem())}>Add To Do List</button>
 
           {isLogged ? <p>hey</p>: ''}
-          {toDo ? <h1>To Do Activated</h1> : ''}
 
+          <ReduxPlay/>
+          <div>{MakeList(toDo)}</div>
 
 
 

@@ -29,8 +29,6 @@ class PostForm extends React.Component {
         this.props.createPost(post);
     }
 
-    
-
 
     render() {
         return (

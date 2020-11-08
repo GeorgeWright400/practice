@@ -17,8 +17,9 @@ export const signin = () => {
     }
 }
 
-export const additem = () => {
+export const additem = (thing) => {
     return {
-        type: 'ADD_ITEM'
+        type: 'ADD_ITEM',
+        payload: thing
     }
 }
