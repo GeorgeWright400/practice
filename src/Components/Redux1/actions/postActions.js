@@ -22,10 +22,11 @@ export function createPost(postData){
             body: JSON.stringify(postData)
         })
         .then(res => res.json())
-        .then(post => dispatch({
-            type:NEW_POST,
-            payload: post
+        .then(post => 
+            dispatch({
+                type:NEW_POST,
+                payload: post
         }));
 
-    }
+    };
 }

@@ -16,3 +16,9 @@ export const signin = () => {
         type:'SIGN_IN'
     }
 }
+
+export const additem = () => {
+    return {
+        type: 'ADD_ITEM'
+    }
+}
