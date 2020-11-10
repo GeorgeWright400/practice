@@ -2,7 +2,7 @@ import React from "react";
 
 class NewPage2 extends React.Component {
   render() {
-      return <h1>Hello World 2</h1>
+      return (<p>lorem ipsum euhuhbvd</p>)
   }
 }
 
